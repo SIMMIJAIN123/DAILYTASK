@@ -1,0 +1,28 @@
+# CREATE A VIRTUAL ENVIRONMENT
+python3 -m venv aws_env
+
+# Activate ENV
+source aws_env/bin/activate
+
+# Install AWS CLI inside the virtual environment
+pip install awscli
+
+# Verify AWS CLI version (inside the virtual environment)
+aws --version
+
+aws configure
+
+bue we need to do only using boto3
+
+pip install boto3
+
+1. create a bucket
+2. delete a bucket  so need iam user 
+3. create iam user 
+4. Upload a object in bucket :- so also we can do simple but if we did with lambda triggered.
+    1. Object uploaded** to S3.  
+    2. S3 triggers an event notification.
+    3. Lambda receives event details.
+    4. Lambda executes custom logic** (e.g., logging, processing, updating DB).
+
+5. 
